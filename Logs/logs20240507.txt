@@ -1,0 +1,369 @@
+[07-05-2024 17:07:39479 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[07-05-2024 17:07:39731 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[07-05-2024 17:07:39733 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[07-05-2024 17:07:39741 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[07-05-2024 17:07:39746 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[07-05-2024 17:07:39751 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[07-05-2024 17:07:40236 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger - -
+[07-05-2024 17:07:40327 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger - - - 301 0 - 95.5249ms
+[07-05-2024 17:07:40331 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[07-05-2024 17:07:40643 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 312.4365ms
+[07-05-2024 17:07:40693 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui.css - -
+[07-05-2024 17:07:40694 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui-bundle.js - -
+[07-05-2024 17:07:40696 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:07:40696 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[07-05-2024 17:07:40696 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui-standalone-preset.js - -
+[07-05-2024 17:07:40702 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 6.6118ms
+[07-05-2024 17:07:40724 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+[07-05-2024 17:07:40724 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+[07-05-2024 17:07:40726 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 30.4711ms
+[07-05-2024 17:07:40728 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui.css - - - 200 143632 text/css 34.2464ms
+[07-05-2024 17:07:40733 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+[07-05-2024 17:07:40735 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 41.4368ms
+[07-05-2024 17:07:40750 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.9078ms
+[07-05-2024 17:07:41011 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 17:07:41038 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/favicon-32x32.png - -
+[07-05-2024 17:07:41039 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[07-05-2024 17:07:41041 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/favicon-32x32.png - - - 200 628 image/png 3.3111ms
+[07-05-2024 17:07:41041 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp),UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[07-05-2024 17:07:41093 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 82.6202ms
+[07-05-2024 17:09:39220 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[07-05-2024 17:09:43030 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[07-05-2024 17:09:43221 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[07-05-2024 17:09:43222 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[07-05-2024 17:09:43226 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[07-05-2024 17:09:43227 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[07-05-2024 17:09:43228 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[07-05-2024 17:09:43620 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[07-05-2024 17:09:43923 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 305.9744ms
+[07-05-2024 17:09:43936 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:09:43942 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 5.6185ms
+[07-05-2024 17:09:43954 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[07-05-2024 17:09:43969 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.1818ms
+[07-05-2024 17:09:44159 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 17:09:44188 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp),UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[07-05-2024 17:09:44211 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 52.4134ms
+[07-05-2024 17:09:52711 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[07-05-2024 17:09:52721 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 10.1102ms
+[07-05-2024 17:09:52734 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui.css - -
+[07-05-2024 17:09:52737 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui-bundle.js - -
+[07-05-2024 17:09:52737 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui-standalone-preset.js - -
+[07-05-2024 17:09:52737 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:09:52740 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[07-05-2024 17:09:52742 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 4.7076ms
+[07-05-2024 17:09:52760 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+[07-05-2024 17:09:52760 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+[07-05-2024 17:09:52760 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+[07-05-2024 17:09:52761 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.7866ms
+[07-05-2024 17:09:52763 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 25.6972ms
+[07-05-2024 17:09:52765 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui.css - - - 200 143632 text/css 30.7675ms
+[07-05-2024 17:09:52768 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 30.8032ms
+[07-05-2024 17:09:52837 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 17:09:52839 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp),UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[07-05-2024 17:09:52842 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/favicon-32x32.png - -
+[07-05-2024 17:09:52847 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 10.7454ms
+[07-05-2024 17:09:52848 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[07-05-2024 17:09:52851 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/favicon-32x32.png - - - 200 628 image/png 9.0348ms
+[07-05-2024 17:09:52899 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[07-05-2024 17:09:52906 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 7.3870ms
+[07-05-2024 17:09:52921 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui-bundle.js - -
+[07-05-2024 17:09:52921 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui.css - -
+[07-05-2024 17:09:52921 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:09:52921 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui-standalone-preset.js - -
+[07-05-2024 17:09:52927 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+[07-05-2024 17:09:52928 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 6.7756ms
+[07-05-2024 17:09:52929 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[07-05-2024 17:09:52931 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+[07-05-2024 17:09:52933 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+[07-05-2024 17:09:52937 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui.css - - - 200 143632 text/css 15.7816ms
+[07-05-2024 17:09:52941 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 19.9024ms
+[07-05-2024 17:09:52943 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 21.9085ms
+[07-05-2024 17:09:52948 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.5850ms
+[07-05-2024 17:09:53014 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 17:09:53016 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp),UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[07-05-2024 17:09:53022 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 8.2530ms
+[07-05-2024 17:09:53023 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/favicon-32x32.png - -
+[07-05-2024 17:09:53025 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[07-05-2024 17:09:53027 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/favicon-32x32.png - - - 200 628 image/png 4.4353ms
+[07-05-2024 17:09:53079 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[07-05-2024 17:09:53087 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 7.6559ms
+[07-05-2024 17:09:53104 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui-standalone-preset.js - -
+[07-05-2024 17:09:53104 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui-bundle.js - -
+[07-05-2024 17:09:53104 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/swagger-ui.css - -
+[07-05-2024 17:09:53104 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:09:53110 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+[07-05-2024 17:09:53111 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+[07-05-2024 17:09:53112 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 7.3338ms
+[07-05-2024 17:09:53121 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+[07-05-2024 17:09:53116 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 11.6342ms
+[07-05-2024 17:09:53120 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui.css - - - 200 143632 text/css 15.3817ms
+[07-05-2024 17:09:53115 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[07-05-2024 17:09:53125 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 20.3545ms
+[07-05-2024 17:09:53133 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.4777ms
+[07-05-2024 17:09:53199 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 17:09:53202 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp),UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[07-05-2024 17:09:53209 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/favicon-32x32.png - -
+[07-05-2024 17:09:53210 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 11.1065ms
+[07-05-2024 17:09:53211 +03:00 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware ] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[07-05-2024 17:09:53215 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/favicon-32x32.png - - - 200 628 image/png 5.9713ms
+[07-05-2024 17:12:12870 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[07-05-2024 17:12:13063 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[07-05-2024 17:12:13065 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[07-05-2024 17:12:13071 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[07-05-2024 17:12:13074 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[07-05-2024 17:12:13076 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[07-05-2024 17:12:13543 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[07-05-2024 17:12:13820 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 279.5921ms
+[07-05-2024 17:12:13829 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:12:13833 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 3.9076ms
+[07-05-2024 17:12:13842 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[07-05-2024 17:12:13857 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.0988ms
+[07-05-2024 17:12:14014 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 17:12:14042 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp),UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[07-05-2024 17:12:14064 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 50.1069ms
+[07-05-2024 17:12:21768 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[07-05-2024 17:12:33966 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[07-05-2024 17:12:34145 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[07-05-2024 17:12:34148 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[07-05-2024 17:12:34152 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[07-05-2024 17:12:34155 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[07-05-2024 17:12:34155 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[07-05-2024 17:12:34961 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[07-05-2024 17:12:35250 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:12:35252 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 292.9016ms
+[07-05-2024 17:12:35256 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 5.5853ms
+[07-05-2024 17:12:35274 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[07-05-2024 17:12:35292 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.8590ms
+[07-05-2024 17:12:35373 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 17:12:35405 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp),UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[07-05-2024 17:12:35427 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 54.3517ms
+[07-05-2024 17:18:01006 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[07-05-2024 17:18:11839 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[07-05-2024 17:18:12025 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[07-05-2024 17:18:12027 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[07-05-2024 17:18:12032 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[07-05-2024 17:18:12035 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[07-05-2024 17:18:12036 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[07-05-2024 17:18:12612 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[07-05-2024 17:18:12888 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 278.7067ms
+[07-05-2024 17:18:12889 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:18:12893 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 3.5559ms
+[07-05-2024 17:18:12911 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[07-05-2024 17:18:12927 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.4071ms
+[07-05-2024 17:18:12999 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 17:18:13027 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp),UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[07-05-2024 17:18:13047 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 47.7266ms
+[07-05-2024 17:18:55970 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[07-05-2024 17:24:48643 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[07-05-2024 17:24:48821 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[07-05-2024 17:24:48823 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[07-05-2024 17:24:48828 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[07-05-2024 17:24:48829 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[07-05-2024 17:24:48830 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[07-05-2024 17:24:49487 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[07-05-2024 17:24:49773 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:24:49774 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 292.0802ms
+[07-05-2024 17:24:49777 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 4.2524ms
+[07-05-2024 17:24:49797 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[07-05-2024 17:24:49813 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.8451ms
+[07-05-2024 17:24:49903 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 17:24:49929 +03:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware ] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User" for actions - UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp),UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[07-05-2024 17:24:49953 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 49.8951ms
+[07-05-2024 17:25:46361 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[07-05-2024 17:27:29578 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[07-05-2024 17:27:29784 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[07-05-2024 17:27:29785 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[07-05-2024 17:27:29789 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[07-05-2024 17:27:29791 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[07-05-2024 17:27:29792 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[07-05-2024 17:27:30348 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[07-05-2024 17:27:30652 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 17:27:30652 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 309.1605ms
+[07-05-2024 17:27:30658 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 5.9066ms
+[07-05-2024 17:27:30677 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[07-05-2024 17:27:30698 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.3445ms
+[07-05-2024 17:27:30782 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 17:27:30921 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.1901ms
+[07-05-2024 17:29:04992 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 POST https://localhost:7100/api/User/LoginUser application/json-patch+json 80
+[07-05-2024 17:29:05001 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[07-05-2024 17:29:05050 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)"'
+[07-05-2024 17:29:05087 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"LoginUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.JwtTokenDTO]] LoginUserAsync(UsersStudentsAPIApp.DTO.UserLoginDTO)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[07-05-2024 17:29:07148 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("65"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0 OR [u].[EMAIL] = @__username_0"
+[07-05-2024 17:29:07176 +03:00 UsersStudentsAPIApp.Services.UserService ] "User:  found and returned"
+[07-05-2024 17:29:07188 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)" in 2090.5976ms
+[07-05-2024 17:29:07192 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)"'
+[07-05-2024 17:29:07214 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 POST https://localhost:7100/api/User/LoginUser application/json-patch+json 80 - 401 - application/json 2222.8567ms
+[07-05-2024 17:30:45037 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 POST https://localhost:7100/api/User/SignupUser application/json-patch+json 223
+[07-05-2024 17:30:45043 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[07-05-2024 17:30:45047 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp)"'
+[07-05-2024 17:30:45053 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"SignupUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.UserReadOnlyDTO]] SignupUserAsync(UsersStudentsAPIApp.DTO.UserSignupDTO)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[07-05-2024 17:30:45146 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("6"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+[07-05-2024 17:30:45150 +03:00 UsersStudentsAPIApp.Services.UserService ] "User:  found and returned"
+[07-05-2024 17:30:45157 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+[07-05-2024 17:30:45524 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("4"ms) [Parameters=["@__phoneNumber_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[ID], [t].[INSTITUTION], [t].[PHONE_NUMBER], [t].[UserId]
+FROM [TEACHERS] AS [t]
+WHERE [t].[PHONE_NUMBER] = @__phoneNumber_0"
+[07-05-2024 17:30:45763 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("11"ms) [Parameters=["@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 512), @p4='?' (Size = 50), @p5='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [USERS] ([EMAIL], [FIRSTNAME], [LASTNAME], [PASSWORD], [USER_ROLE], [USERNAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);"
+[07-05-2024 17:30:45823 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("11"ms) [Parameters=["@p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [TEACHERS] ([INSTITUTION], [PHONE_NUMBER], [UserId])
+OUTPUT INSERTED.[ID]
+VALUES (@p6, @p7, @p8);"
+[07-05-2024 17:30:45860 +03:00 UsersStudentsAPIApp.Services.UserService ] "User: andreas, Andreas, Androutsos signup success"
+[07-05-2024 17:30:45888 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"UsersStudentsAPIApp.DTO.UserReadOnlyDTO"'.
+[07-05-2024 17:30:45974 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp)" in 918.1909ms
+[07-05-2024 17:30:45978 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp)"'
+[07-05-2024 17:30:45982 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 POST https://localhost:7100/api/User/SignupUser application/json-patch+json 223 - 201 198 application/json;+charset=utf-8 944.9125ms
+[07-05-2024 17:32:40113 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/api/User/GetUserById?id=1 - -
+[07-05-2024 17:32:40205 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)"'
+[07-05-2024 17:32:40258 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetUserById\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.UserReadOnlyDTO]] GetUserById(Int32)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[07-05-2024 17:32:40812 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("35"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[ID] = @__p_0"
+[07-05-2024 17:32:40882 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.UserReadOnlyDTO"'.
+[07-05-2024 17:32:40895 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)" in 424.4754ms
+[07-05-2024 17:32:40904 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)"'
+[07-05-2024 17:32:40921 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/api/User/GetUserById?id=1 - - - 200 198 application/json;+charset=utf-8 808.8414ms
+[07-05-2024 17:32:41313 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/favicon.ico - -
+[07-05-2024 17:32:41332 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/favicon.ico - - - 404 0 - 19.6636ms
+[07-05-2024 17:34:55525 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/1.1 GET https://localhost:7100/api/User/GetUserById?id=1 - -
+[07-05-2024 17:34:55529 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)"'
+[07-05-2024 17:34:55533 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetUserById\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.UserReadOnlyDTO]] GetUserById(Int32)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[07-05-2024 17:34:55551 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("8"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[ID] = @__p_0"
+[07-05-2024 17:34:55564 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.UserReadOnlyDTO"'.
+[07-05-2024 17:34:55571 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)" in 32.8293ms
+[07-05-2024 17:34:55574 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)"'
+[07-05-2024 17:34:55576 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/1.1 GET https://localhost:7100/api/User/GetUserById?id=1 - - - 200 198 application/json;+charset=utf-8 51.1143ms
+[07-05-2024 17:37:05717 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/api/User/GetUserTeacherByUsername?username=andreas - -
+[07-05-2024 17:37:05719 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserTeacherByUsername (UsersStudentsAPIApp)"'
+[07-05-2024 17:37:05726 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetUserTeacherByUsername\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.UserTeacherReadOnlyDTO]] GetUserTeacherByUsername(System.String)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[07-05-2024 17:37:05876 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("22"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[ID], [u].[USERNAME], [u].[EMAIL], [u].[PASSWORD], [u].[FIRSTNAME], [u].[LASTNAME], [u].[USER_ROLE], [t].[PHONE_NUMBER], [t].[INSTITUTION]
+FROM [USERS] AS [u]
+LEFT JOIN [TEACHERS] AS [t] ON [u].[ID] = [t].[UserId]
+WHERE [u].[USERNAME] = @__username_0 AND [u].[USER_ROLE] = N'Teacher'"
+[07-05-2024 17:37:05881 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.UserTeacherReadOnlyDTO"'.
+[07-05-2024 17:37:05887 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.GetUserTeacherByUsername (UsersStudentsAPIApp)" in 156.3066ms
+[07-05-2024 17:37:05890 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserTeacherByUsername (UsersStudentsAPIApp)"'
+[07-05-2024 17:37:05892 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/api/User/GetUserTeacherByUsername?username=andreas - - - 200 246 application/json;+charset=utf-8 175.2322ms
+[07-05-2024 17:37:35720 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/1.1 GET https://localhost:7100/api/User/GetUserTeacherByUsername?username=andreas - -
+[07-05-2024 17:37:35727 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserTeacherByUsername (UsersStudentsAPIApp)"'
+[07-05-2024 17:37:35729 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetUserTeacherByUsername\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.UserTeacherReadOnlyDTO]] GetUserTeacherByUsername(System.String)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[07-05-2024 17:37:35742 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("1"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[ID], [u].[USERNAME], [u].[EMAIL], [u].[PASSWORD], [u].[FIRSTNAME], [u].[LASTNAME], [u].[USER_ROLE], [t].[PHONE_NUMBER], [t].[INSTITUTION]
+FROM [USERS] AS [u]
+LEFT JOIN [TEACHERS] AS [t] ON [u].[ID] = [t].[UserId]
+WHERE [u].[USERNAME] = @__username_0 AND [u].[USER_ROLE] = N'Teacher'"
+[07-05-2024 17:37:35749 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.UserTeacherReadOnlyDTO"'.
+[07-05-2024 17:37:35752 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.GetUserTeacherByUsername (UsersStudentsAPIApp)" in 16.516ms
+[07-05-2024 17:37:35754 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserTeacherByUsername (UsersStudentsAPIApp)"'
+[07-05-2024 17:37:35756 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/1.1 GET https://localhost:7100/api/User/GetUserTeacherByUsername?username=andreas - - - 200 246 application/json;+charset=utf-8 36.8585ms
+[07-05-2024 17:39:27847 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 POST https://localhost:7100/api/User/LoginUser application/json-patch+json 81
+[07-05-2024 17:39:27850 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[07-05-2024 17:39:27853 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)"'
+[07-05-2024 17:39:27856 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"LoginUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.JwtTokenDTO]] LoginUserAsync(UsersStudentsAPIApp.DTO.UserLoginDTO)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[07-05-2024 17:39:27882 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("13"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0 OR [u].[EMAIL] = @__username_0"
+[07-05-2024 17:39:28190 +03:00 UsersStudentsAPIApp.Services.UserService ] "User: andreas, Andreas, Androutsos found and returned"
+[07-05-2024 17:39:28345 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.JwtTokenDTO"'.
+[07-05-2024 17:39:28349 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)" in 484.9242ms
+[07-05-2024 17:39:28353 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)"'
+[07-05-2024 17:39:28357 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 POST https://localhost:7100/api/User/LoginUser application/json-patch+json 81 - 200 551 application/json;+charset=utf-8 509.8372ms
+[07-05-2024 21:05:20557 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/ - -
+[07-05-2024 21:05:20564 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/ - - - 404 0 - 8.1055ms
+[07-05-2024 21:05:22461 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[07-05-2024 21:05:22467 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 5.3437ms
+[07-05-2024 21:06:19052 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 POST https://localhost:7100/api/User/LoginUser application/json-patch+json 81
+[07-05-2024 21:06:19054 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[07-05-2024 21:06:19056 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)"'
+[07-05-2024 21:06:19059 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"LoginUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.JwtTokenDTO]] LoginUserAsync(UsersStudentsAPIApp.DTO.UserLoginDTO)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[07-05-2024 21:06:19102 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("5"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0 OR [u].[EMAIL] = @__username_0"
+[07-05-2024 21:06:19429 +03:00 UsersStudentsAPIApp.Services.UserService ] "User: andreas, Andreas, Androutsos found and returned"
+[07-05-2024 21:06:19434 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.JwtTokenDTO"'.
+[07-05-2024 21:06:19438 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)" in 372.2626ms
+[07-05-2024 21:06:19443 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)"'
+[07-05-2024 21:06:19447 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 POST https://localhost:7100/api/User/LoginUser application/json-patch+json 81 - 200 551 application/json;+charset=utf-8 395.0064ms
+[07-05-2024 21:07:54429 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 21:07:54481 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 51.7343ms
+[07-05-2024 21:11:01121 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[07-05-2024 21:11:01131 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.0647ms
+[07-05-2024 23:44:42619 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
