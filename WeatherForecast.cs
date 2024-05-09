@@ -1,4 +1,4 @@
-namespace UsersStudentsAPIApp
+/*namespace UsersStudentsAPIApp
 {
     public class WeatherForecast
     {
@@ -10,4 +10,4 @@ namespace UsersStudentsAPIApp
 
         public string? Summary { get; set; }
     }
-}
+}*/

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UsersStudentsAPIApp.Data;
 using UsersStudentsAPIApp.DTO;
@@ -99,6 +100,26 @@ namespace UsersStudentsAPIApp.Controllers
             };
 
             return Ok(token);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<UserDTO>> UpdateUserPatch(UserPatchDTO patchDTO)
+        {
+            var userId = AppUser!.Id;
+            var user = await _applicationService.UserService.UpdateUserPatchAsync(userId, patchDTO);
+            var userDTO = _mapper.Map<UserDTO>(user);
+            return Ok(userDTO);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<UserDTO>> UpdateUserAccount(UserDTO? userDTO)
+        {
+            var userId = AppUser!.Id;
+            var user = await _applicationService.UserService.UpdateUserAsync(userId, userDTO!);
+            var returnedUserDTO = _mapper.Map<UserDTO>(user);
+            return Ok(returnedUserDTO);
         }
     }
 }
