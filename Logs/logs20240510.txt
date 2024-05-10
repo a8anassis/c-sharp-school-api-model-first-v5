@@ -38,3 +38,41 @@ WHERE [u].[USERNAME] = @__username_0 AND [u].[USER_ROLE] = N'Teacher'"
 [10-05-2024 14:31:08196 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserTeacherByUsername (UsersStudentsAPIApp)"'
 [10-05-2024 14:31:08197 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/api/User/GetUserTeacherByUsername/andreas - - - 200 246 application/json;+charset=utf-8 196.8322ms
 [10-05-2024 14:32:16678 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[10-05-2024 14:32:21934 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[10-05-2024 14:32:22287 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[10-05-2024 14:32:22289 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[10-05-2024 14:32:22299 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[10-05-2024 14:32:22303 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[10-05-2024 14:32:22305 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[10-05-2024 14:32:22959 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[10-05-2024 14:32:23549 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 596.4787ms
+[10-05-2024 14:32:23610 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[10-05-2024 14:32:23619 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 8.8682ms
+[10-05-2024 14:32:23623 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[10-05-2024 14:32:23651 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.2723ms
+[10-05-2024 14:32:23935 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[10-05-2024 14:32:24238 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 302.7216ms
+[10-05-2024 14:32:58137 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 POST https://localhost:7100/api/User/LoginUser application/json-patch+json 56
+[10-05-2024 14:32:58147 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[10-05-2024 14:32:58178 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)"'
+[10-05-2024 14:32:58215 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"LoginUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.JwtTokenDTO]] LoginUserAsync(UsersStudentsAPIApp.DTO.UserLoginDTO)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[10-05-2024 14:33:01710 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("184"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0 OR [u].[EMAIL] = @__username_0"
+[10-05-2024 14:33:02652 +03:00 UsersStudentsAPIApp.Services.UserService ] "User: andreas, Andreas, Androutsos found and returned"
+[10-05-2024 14:33:03016 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.JwtTokenDTO"'.
+[10-05-2024 14:33:03172 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)" in 4931.3502ms
+[10-05-2024 14:33:03180 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)"'
+[10-05-2024 14:33:03212 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 POST https://localhost:7100/api/User/LoginUser application/json-patch+json 56 - 200 551 application/json;+charset=utf-8 5075.2559ms
+[10-05-2024 14:35:18785 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[10-05-2024 14:35:18803 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.3207ms
+[10-05-2024 14:35:18920 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/favicon.ico - -
+[10-05-2024 14:35:18924 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/favicon.ico - - - 404 0 - 3.8211ms
+[10-05-2024 15:38:43846 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 DELETE https://localhost:7100/api/User/DeleteUser/1 - -
+[10-05-2024 15:38:43870 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[10-05-2024 15:38:44059 +03:00 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService ] Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)"
+[10-05-2024 15:38:44066 +03:00 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler ] AuthenticationScheme: "Bearer" was forbidden.
+[10-05-2024 15:38:44071 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 DELETE https://localhost:7100/api/User/DeleteUser/1 - - - 403 0 - 227.5768ms
+[10-05-2024 16:42:00059 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...

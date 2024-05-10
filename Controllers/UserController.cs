@@ -57,7 +57,7 @@ namespace UsersStudentsAPIApp.Controllers
             return CreatedAtAction(nameof(GetUserById), new { id = returnedUserDTO.Id }, returnedUserDTO);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}")] 
         public async Task<ActionResult<UserReadOnlyDTO>> GetUserById(int id)
         {
             var user = await _applicationService.UserService.GetUserById(id);
