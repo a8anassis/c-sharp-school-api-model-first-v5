@@ -125,7 +125,7 @@ namespace UsersStudentsAPIApp
 
             builder.Services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "School API", Version = "v1" });
                 // Non-nullable reference are properly documented
                 options.SupportNonNullableReferenceTypes();
                 options.OperationFilter<AuthorizeOperationFilter>();
