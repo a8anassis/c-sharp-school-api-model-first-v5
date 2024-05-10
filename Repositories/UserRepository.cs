@@ -93,10 +93,10 @@ namespace UsersStudentsAPIApp.Repositories
         public async Task<UserTeacherReadOnlyDTO?> GetUserTeacherInfoAync(string username)
         {
             var userTeacher = await _context.Users
-            .Where(u => u.Username == username && u.UserRole == UserRole.Teacher)
-            .Include(u => u.Teacher)
-            .ProjectTo <UserTeacherReadOnlyDTO>(_mapper.ConfigurationProvider)
-            .SingleOrDefaultAsync();
+                .Where(u => u.Username == username && u.UserRole == UserRole.Teacher)
+                .Include(u => u.Teacher)
+                .ProjectTo <UserTeacherReadOnlyDTO>(_mapper.ConfigurationProvider)
+                .FirstOrDefaultAsync();
 
             return userTeacher!;
         }

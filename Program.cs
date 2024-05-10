@@ -29,7 +29,6 @@ namespace UsersStudentsAPIApp
                 config.ReadFrom.Configuration(context.Configuration);
             });
 
-
             var connString = builder.Configuration.GetConnectionString("DefaultConnection");
             builder.Services.AddDbContext<UsersTeachersAPITestDbContext>(options => options.UseSqlServer(connString));
 
@@ -39,10 +38,12 @@ namespace UsersStudentsAPIApp
             //builder.Services.AddAutoMapper(typeof(MapperConfig)); // Singleton
 
             // Per request scope
-            builder.Services.AddScoped(provider => new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile(new MapperConfig());
-            }).CreateMapper());
+            builder.Services.AddScoped(provider => 
+                new MapperConfiguration(cfg =>
+                {
+                    cfg.AddProfile(new MapperConfig());
+                })
+            .CreateMapper());
 
             ///Add Authentication
             builder.Services.AddAuthentication(options =>

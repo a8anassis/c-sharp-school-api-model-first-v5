@@ -37,7 +37,7 @@ namespace UsersStudentsAPIApp.Controllers
                     });
 
                 // instead of return BadRequest(new { Errors = errors });
-                throw new InvalidRegistrationException("ErrorsInRegistation: " + errors.ToString());
+                throw new InvalidRegistrationException("ErrorsInRegistation: " + errors);
             }
             if (_applicationService == null)
             {
@@ -57,7 +57,7 @@ namespace UsersStudentsAPIApp.Controllers
             return CreatedAtAction(nameof(GetUserById), new { id = returnedUserDTO.Id }, returnedUserDTO);
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<ActionResult<UserReadOnlyDTO>> GetUserById(int id)
         {
             var user = await _applicationService.UserService.GetUserById(id);
@@ -70,7 +70,7 @@ namespace UsersStudentsAPIApp.Controllers
             return Ok(returnedUser);
         }
 
-        [HttpGet]
+        [HttpGet("{username}")]
         public async Task<ActionResult<UserTeacherReadOnlyDTO>> GetUserTeacherByUsername(string? username)
         {
             var returnedUserTeacherDTO = await _applicationService.UserService.GetUserTeacherByUsername(username);
@@ -102,24 +102,47 @@ namespace UsersStudentsAPIApp.Controllers
             return Ok(token);
         }
 
-        [HttpPost]
+        [HttpPatch("{id}")]
         [Authorize(Roles = "Admin")]
-        public async Task<ActionResult<UserDTO>> UpdateUserPatch(UserPatchDTO patchDTO)
+        public async Task<ActionResult<UserDTO>> UpdateUserPatch(int id, UserPatchDTO patchDTO)
         {
             var userId = AppUser!.Id;
+            if (id != userId)
+            {
+                throw new ForbiddenException("ForbiddenAccess");
+            }
+
             var user = await _applicationService.UserService.UpdateUserPatchAsync(userId, patchDTO);
             var userDTO = _mapper.Map<UserDTO>(user);
             return Ok(userDTO);
         }
 
-        [HttpPost]
+        [HttpPut]
         [Authorize(Roles = "Admin")]
-        public async Task<ActionResult<UserDTO>> UpdateUserAccount(UserDTO? userDTO)
+        public async Task<ActionResult<UserDTO>> UpdateUserAccount(int id, UserDTO? userDTO)
         {
             var userId = AppUser!.Id;
+            if (id != userId)
+            {
+                throw new ForbiddenException("ForbiddenAccess");
+            }
             var user = await _applicationService.UserService.UpdateUserAsync(userId, userDTO!);
             var returnedUserDTO = _mapper.Map<UserDTO>(user);
             return Ok(returnedUserDTO);
+        }
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> DeleteUser(int id)
+        {          
+            var userId = AppUser!.Id;
+            if (id != userId)
+            {
+                throw new ForbiddenException("ForbiddenAccess");
+            }
+
+            await _applicationService.UserService.DeleteUserAsync(userId);
+            return NoContent();
         }
     }
 }

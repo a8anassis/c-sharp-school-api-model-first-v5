@@ -28,7 +28,11 @@ namespace UsersStudentsAPIApp.Helpers
                 {
                     InvalidRegistrationException or 
                     InvalidRoleException or
-                    UserAlreadyExistsException => (int) HttpStatusCode.BadRequest,
+                    UserAlreadyExistsException or
+                    TeacherAlreadyExistsException or
+                    StudentAlreadyExistsException => (int) HttpStatusCode.BadRequest,
+
+                    ForbiddenException => (int) HttpStatusCode.Forbidden,
 
                     UnauthorizedAccessException => (int) HttpStatusCode.Unauthorized, 
                     

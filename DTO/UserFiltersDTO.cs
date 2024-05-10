@@ -6,6 +6,6 @@ namespace UsersStudentsAPIApp.DTO
     {
         public string? Username { get; set; }
         public string? Email { get; set; }
-        public string? UserRole { get; set; }
+        public UserRole? UserRole { get; set; }
     }
 }

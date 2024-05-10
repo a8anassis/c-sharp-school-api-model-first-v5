@@ -13,7 +13,9 @@ namespace UsersStudentsAPIApp.Services
         Task<User?> GetUserByUsernameAsync(string username);
         Task<List<User>> GetAllUsersFiltered(int pageNumber, int pageSize, 
             UserFiltersDTO userFiltersDTO);
-        string CreateUserToken(int userId, string? userName, string? email, UserRole? userRole, string? appSecurityKey);
+        string CreateUserToken(int userId, string? userName, string? email, UserRole? userRole, 
+            string? appSecurityKey);
         Task<UserTeacherReadOnlyDTO?> GetUserTeacherByUsername(string? username);
+        Task DeleteUserAsync(int id);
     }
 }

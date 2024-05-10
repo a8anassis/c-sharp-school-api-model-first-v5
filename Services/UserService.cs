@@ -26,9 +26,9 @@ namespace UsersStudentsAPIApp.Services
 
         public async Task<User?> SignUpUserAsync(UserSignupDTO signupDTO)
         {            
-            Student? student = null;
-            Teacher? teacher = null;
-            User? user = null;
+            Student? student;
+            Teacher? teacher;
+            User? user;
 
             try
             {
@@ -60,7 +60,7 @@ namespace UsersStudentsAPIApp.Services
                     teacher = ExtractTeacher(signupDTO);
                     if (await _unitOfWork!.TeacherRepository.GetByPhoneNumber(teacher.PhoneNumber) is not null)
                     {
-                        throw new TeacherAlreadyExistsException("StudentExists");
+                        throw new TeacherAlreadyExistsException("TeacherExists");
                     }
                     await _unitOfWork!.TeacherRepository.AddAsync(teacher);
                     user.Teacher = teacher;
@@ -69,8 +69,7 @@ namespace UsersStudentsAPIApp.Services
                 else
                 {
                     throw new InvalidRoleException("InvalidRole");                 
-                }
-                
+                }                
                 await _unitOfWork!.SaveAsync();
                 _logger!.LogInformation("{Message}", "User: " + user + " signup success");
             } catch (Exception e)
@@ -101,7 +100,7 @@ namespace UsersStudentsAPIApp.Services
         public async Task<User?> UpdateUserAsync(int userId, UserDTO userDTO)
         {
             User? existingUser;
-            User? user = null;
+            User? user;
             try
             {
                 existingUser = await _unitOfWork!.UserRepository.GetAsync(userId);
@@ -149,7 +148,7 @@ namespace UsersStudentsAPIApp.Services
 
         public async Task<User?> GetUserByUsernameAsync(string username)
         {
-            User? user = null;
+            User? user;
             try
             {
                 user = await _unitOfWork!.UserRepository.GetByUsernameAsync(username);
@@ -168,22 +167,30 @@ namespace UsersStudentsAPIApp.Services
             List<User> users = new();
             List<Func<User, bool>> predicates = new();
 
-            // Add individual predicates for filtering conditions
-            if (!string.IsNullOrEmpty(userFiltersDTO.Username))
+            try
             {
-                predicates.Add(u => u.Username == userFiltersDTO.Username);
+                // Add individual predicates for filtering conditions
+                if (!string.IsNullOrEmpty(userFiltersDTO.Username))
+                {
+                    predicates.Add(u => u.Username == userFiltersDTO.Username);
+                }
+                if (!string.IsNullOrEmpty(userFiltersDTO.Email))
+                {
+                    predicates.Add(u => u.Email == userFiltersDTO.Email);
+                }
+                if (!string.IsNullOrEmpty(userFiltersDTO.UserRole.ToString()))
+                {
+                    predicates.Add(u => u.UserRole == userFiltersDTO.UserRole);
+                }
+                users = await _unitOfWork!.UserRepository.GetAllUsersFilteredAsync(pageNumber, pageSize,
+                    predicates);
+                _logger!.LogInformation("{Message}", "User Filtered Returned Success");
             }
-            if (!string.IsNullOrEmpty(userFiltersDTO.Email))
+            catch (Exception e)
             {
-                predicates.Add(u => u.Email == userFiltersDTO.Email);
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
             }
-            if (!string.IsNullOrEmpty(userFiltersDTO.UserRole))
-            {
-                predicates.Add(u => u.UserRole!.Value.ToString() == userFiltersDTO.UserRole);
-            }
-
-            users = await _unitOfWork!.UserRepository.GetAllUsersFilteredAsync(pageNumber, pageSize, 
-                predicates);
             return users;
         }
 
@@ -205,6 +212,7 @@ namespace UsersStudentsAPIApp.Services
             var jwtSecurityToken = new JwtSecurityToken(null, null, claimsInfo, DateTime.UtcNow, 
                 DateTime.UtcNow.AddHours(3), signingCredentials);
 
+            // Serialize the token
             var userToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
 
             //return "Bearer " + userToken;
@@ -213,7 +221,52 @@ namespace UsersStudentsAPIApp.Services
 
         public async Task<UserTeacherReadOnlyDTO?> GetUserTeacherByUsername(string? username)
         {
-            return await _unitOfWork!.UserRepository.GetUserTeacherInfoAync(username!);
+            UserTeacherReadOnlyDTO? dto;
+            try
+            {
+                dto = await _unitOfWork!.UserRepository.GetUserTeacherInfoAync(username!);
+                _logger!.LogInformation("{Message}", "User with username: " + username + " Success");
+                return dto;
+            }
+            catch (Exception e)
+            {
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
+            }
+        }
+
+        public async Task<User?> GetUserById(int id)
+        {
+            User? user;
+            try
+            {
+                user = await _unitOfWork!.UserRepository.GetAsync(id);
+                _logger!.LogInformation("{Message}", "User with id: " + id + " Success");
+            }
+            catch (Exception e)
+            {
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
+            }
+            return user;
+        }
+
+        public async Task DeleteUserAsync(int id)
+        {
+            bool deleted;
+            try
+            {
+                deleted = await _unitOfWork!.UserRepository.DeleteAsync(id);
+                if (!deleted)
+                {
+                    throw new UserNotFoundException("UserNotFound");
+                }
+            }
+            catch (Exception e)
+            {
+                _logger!.LogError("{Message}{Exception}", e.Message, e.StackTrace);
+                throw;
+            }
         }
 
         private User ExtractUser(UserSignupDTO signupDTO)
@@ -227,12 +280,6 @@ namespace UsersStudentsAPIApp.Services
                 Lastname = signupDTO.Lastname,
                 UserRole = signupDTO.UserRole
             };
-        }
-
-        public async Task<User?> GetUserById(int id)
-        {
-            User? user = await _unitOfWork!.UserRepository.GetAsync(id);
-            return user;
         }
 
         private Student ExtractStudent(UserSignupDTO? signupDTO)
