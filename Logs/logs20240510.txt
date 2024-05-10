@@ -90,3 +90,24 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 [10-05-2024 16:43:29179 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 130.3537ms
 [10-05-2024 16:43:29300 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
 [10-05-2024 16:43:29566 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 265.8743ms
+[10-05-2024 17:08:13287 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[10-05-2024 17:08:13438 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[10-05-2024 17:08:13440 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[10-05-2024 17:08:13444 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[10-05-2024 17:08:13445 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[10-05-2024 17:08:13446 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[10-05-2024 17:08:13654 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[10-05-2024 17:08:13918 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 267.5992ms
+[10-05-2024 17:08:13919 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[10-05-2024 17:08:13923 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 4.3167ms
+[10-05-2024 17:08:13943 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[10-05-2024 17:08:13957 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.7702ms
+[10-05-2024 17:08:14031 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[10-05-2024 17:08:14150 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.6353ms
+[10-05-2024 17:08:16957 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[10-05-2024 17:08:16969 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.7575ms
+[10-05-2024 17:08:17043 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/favicon.ico - -
+[10-05-2024 17:08:17075 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/favicon.ico - - - 404 0 - 31.6278ms
+[10-05-2024 17:09:20014 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[10-05-2024 17:09:20021 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.9376ms
+[10-05-2024 17:10:55635 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
