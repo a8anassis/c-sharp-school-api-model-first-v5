@@ -32,11 +32,8 @@ namespace UsersStudentsAPIApp.Helpers
                     TeacherAlreadyExistsException or
                     StudentAlreadyExistsException => (int) HttpStatusCode.BadRequest,
 
+                    UnauthorizedAccessException => (int)HttpStatusCode.Unauthorized,
                     ForbiddenException => (int) HttpStatusCode.Forbidden,
-
-                    UnauthorizedAccessException => (int) HttpStatusCode.Unauthorized, 
-                    
-                    KeyNotFoundException or
                     UserNotFoundException => (int) HttpStatusCode.NotFound,
                     _ => (int) HttpStatusCode.InternalServerError
                 };
