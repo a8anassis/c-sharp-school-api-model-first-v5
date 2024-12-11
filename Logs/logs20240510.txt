@@ -111,3 +111,129 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 [10-05-2024 17:09:20014 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
 [10-05-2024 17:09:20021 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.9376ms
 [10-05-2024 17:10:55635 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[10-05-2024 19:42:42238 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[10-05-2024 19:42:42572 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[10-05-2024 19:42:42575 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[10-05-2024 19:42:42582 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[10-05-2024 19:42:42583 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[10-05-2024 19:42:42585 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[10-05-2024 19:42:43479 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[10-05-2024 19:42:44467 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[10-05-2024 19:42:44468 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 998.4377ms
+[10-05-2024 19:42:44481 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 14.5354ms
+[10-05-2024 19:42:44677 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[10-05-2024 19:42:44903 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 225.0412ms
+[10-05-2024 19:42:45158 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[10-05-2024 19:42:45519 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 360.9127ms
+[10-05-2024 19:42:58236 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[10-05-2024 19:42:58254 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.6131ms
+[10-05-2024 19:42:58382 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/favicon.ico - -
+[10-05-2024 19:42:58445 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/favicon.ico - - - 404 0 - 63.1484ms
+[10-05-2024 19:43:12981 +03:00 Microsoft.Hosting.Lifetime ] Application is shutting down...
+[10-05-2024 20:48:14136 +03:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager ] User profile is available. Using '"C:\Users\a8ana\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[10-05-2024 20:48:14465 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "https://localhost:7100"
+[10-05-2024 20:48:14467 +03:00 Microsoft.Hosting.Lifetime ] Now listening on: "http://localhost:5100"
+[10-05-2024 20:48:14474 +03:00 Microsoft.Hosting.Lifetime ] Application started. Press Ctrl+C to shut down.
+[10-05-2024 20:48:14476 +03:00 Microsoft.Hosting.Lifetime ] Hosting environment: "Development"
+[10-05-2024 20:48:14478 +03:00 Microsoft.Hosting.Lifetime ] Content root path: "C:\Users\a8ana\source\repos2022com\UsersStudentsAPIAppTest\UsersStudentsAPIApp\"
+[10-05-2024 20:48:14798 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/index.html - -
+[10-05-2024 20:48:15358 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/index.html - - - 200 - text/html;charset=utf-8 568.5818ms
+[10-05-2024 20:48:15360 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - -
+[10-05-2024 20:48:15383 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_framework/aspnetcore-browser-refresh.js - - - 200 12008 application/javascript;+charset=utf-8 23.0547ms
+[10-05-2024 20:48:15442 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/_vs/browserLink - -
+[10-05-2024 20:48:15505 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.6309ms
+[10-05-2024 20:48:15822 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[10-05-2024 20:48:16121 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 299.1724ms
+[10-05-2024 20:49:24930 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 POST https://localhost:7100/api/User/SignupUser application/json-patch+json 254
+[10-05-2024 20:49:24939 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[10-05-2024 20:49:24977 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp)"'
+[10-05-2024 20:49:25029 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"SignupUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.UserReadOnlyDTO]] SignupUserAsync(UsersStudentsAPIApp.DTO.UserSignupDTO)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[10-05-2024 20:49:28221 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("87"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+[10-05-2024 20:49:28276 +03:00 UsersStudentsAPIApp.Services.UserService ] "User:  found and returned"
+[10-05-2024 20:49:28291 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("4"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0"
+[10-05-2024 20:49:28812 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("17"ms) [Parameters=["@__phoneNumber_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[ID], [t].[INSTITUTION], [t].[PHONE_NUMBER], [t].[UserId]
+FROM [TEACHERS] AS [t]
+WHERE [t].[PHONE_NUMBER] = @__phoneNumber_0"
+[10-05-2024 20:49:29083 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 60), @p4='?' (Size = 50), @p5='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [USERS] ([EMAIL], [FIRSTNAME], [LASTNAME], [PASSWORD], [USER_ROLE], [USERNAME])
+OUTPUT INSERTED.[ID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);"
+[10-05-2024 20:49:29123 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("5"ms) [Parameters=["@p6='?' (Size = 50), @p7='?' (Size = 50), @p8='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [TEACHERS] ([INSTITUTION], [PHONE_NUMBER], [UserId])
+OUTPUT INSERTED.[ID]
+VALUES (@p6, @p7, @p8);"
+[10-05-2024 20:49:29154 +03:00 UsersStudentsAPIApp.Services.UserService ] "User: dimitris, Δημήτρης, Καλογερόπουλος signup success"
+[10-05-2024 20:49:29184 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "CreatedAtActionResult", writing value of type '"UsersStudentsAPIApp.DTO.UserReadOnlyDTO"'.
+[10-05-2024 20:49:29277 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp)" in 4235.1933ms
+[10-05-2024 20:49:29281 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.SignupUserAsync (UsersStudentsAPIApp)"'
+[10-05-2024 20:49:29295 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 POST https://localhost:7100/api/User/SignupUser application/json-patch+json 254 - 201 227 application/json;+charset=utf-8 4364.8417ms
+[10-05-2024 20:51:17581 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/api/User/GetUserById/2 - -
+[10-05-2024 20:51:17592 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)"'
+[10-05-2024 20:51:17604 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetUserById\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.UserReadOnlyDTO]] GetUserById(Int32)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[10-05-2024 20:51:17834 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("7"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[ID] = @__p_0"
+[10-05-2024 20:51:17850 +03:00 UsersStudentsAPIApp.Services.UserService ] "User with id: 2 Success"
+[10-05-2024 20:51:17862 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.UserReadOnlyDTO"'.
+[10-05-2024 20:51:17870 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)" in 261.9599ms
+[10-05-2024 20:51:17879 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)"'
+[10-05-2024 20:51:17890 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/api/User/GetUserById/2 - - - 200 227 application/json;+charset=utf-8 308.4687ms
+[10-05-2024 20:51:29749 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/api/User/GetUserById/2 - -
+[10-05-2024 20:51:29755 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)"'
+[10-05-2024 20:51:29757 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetUserById\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.UserReadOnlyDTO]] GetUserById(Int32)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[10-05-2024 20:51:29788 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("4"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[ID] = @__p_0"
+[10-05-2024 20:51:29794 +03:00 UsersStudentsAPIApp.Services.UserService ] "User with id: 2 Success"
+[10-05-2024 20:51:29799 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.UserReadOnlyDTO"'.
+[10-05-2024 20:51:29804 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)" in 43.0221ms
+[10-05-2024 20:51:29809 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserById (UsersStudentsAPIApp)"'
+[10-05-2024 20:51:29811 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/api/User/GetUserById/2 - - - 200 227 application/json;+charset=utf-8 61.6498ms
+[10-05-2024 20:51:47419 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/api/User/GetUserTeacherByUsername/dimitris - -
+[10-05-2024 20:51:47421 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserTeacherByUsername (UsersStudentsAPIApp)"'
+[10-05-2024 20:51:47428 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"GetUserTeacherByUsername\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.UserTeacherReadOnlyDTO]] GetUserTeacherByUsername(System.String)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[10-05-2024 20:51:47588 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("9"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[USERNAME], [u].[EMAIL], [u].[PASSWORD], [u].[FIRSTNAME], [u].[LASTNAME], [u].[USER_ROLE], [t].[PHONE_NUMBER], [t].[INSTITUTION]
+FROM [USERS] AS [u]
+LEFT JOIN [TEACHERS] AS [t] ON [u].[ID] = [t].[UserId]
+WHERE [u].[USERNAME] = @__username_0 AND [u].[USER_ROLE] = N'Teacher'"
+[10-05-2024 20:51:47595 +03:00 UsersStudentsAPIApp.Services.UserService ] "User with username: dimitris Success"
+[10-05-2024 20:51:47597 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.UserTeacherReadOnlyDTO"'.
+[10-05-2024 20:51:47603 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.GetUserTeacherByUsername (UsersStudentsAPIApp)" in 170.9352ms
+[10-05-2024 20:51:47607 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.GetUserTeacherByUsername (UsersStudentsAPIApp)"'
+[10-05-2024 20:51:47610 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/api/User/GetUserTeacherByUsername/dimitris - - - 200 276 application/json;+charset=utf-8 190.7182ms
+[10-05-2024 20:52:23542 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 POST https://localhost:7100/api/User/LoginUser application/json-patch+json 58
+[10-05-2024 20:52:23544 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[10-05-2024 20:52:23545 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executing endpoint '"UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)"'
+[10-05-2024 20:52:23553 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Route matched with "{action = \"LoginUser\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UsersStudentsAPIApp.DTO.JwtTokenDTO]] LoginUserAsync(UsersStudentsAPIApp.DTO.UserLoginDTO)" on controller "UsersStudentsAPIApp.Controllers.UserController" ("UsersStudentsAPIApp").
+[10-05-2024 20:52:23577 +03:00 Microsoft.EntityFrameworkCore.Database.Command ] Executed DbCommand ("8"ms) [Parameters=["@__username_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[ID], [u].[EMAIL], [u].[FIRSTNAME], [u].[LASTNAME], [u].[PASSWORD], [u].[USER_ROLE], [u].[USERNAME]
+FROM [USERS] AS [u]
+WHERE [u].[USERNAME] = @__username_0 OR [u].[EMAIL] = @__username_0"
+[10-05-2024 20:52:23830 +03:00 UsersStudentsAPIApp.Services.UserService ] "User: dimitris, Δημήτρης, Καλογερόπουλος found and returned"
+[10-05-2024 20:52:23962 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor ] Executing "OkObjectResult", writing value of type '"UsersStudentsAPIApp.DTO.JwtTokenDTO"'.
+[10-05-2024 20:52:23970 +03:00 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker ] Executed action "UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)" in 413.9348ms
+[10-05-2024 20:52:23973 +03:00 Microsoft.AspNetCore.Routing.EndpointMiddleware ] Executed endpoint '"UsersStudentsAPIApp.Controllers.UserController.LoginUserAsync (UsersStudentsAPIApp)"'
+[10-05-2024 20:52:23975 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 POST https://localhost:7100/api/User/LoginUser application/json-patch+json 58 - 200 553 application/json;+charset=utf-8 433.0569ms
+[10-05-2024 20:53:31525 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 DELETE https://localhost:7100/api/User/DeleteUser/2 - -
+[10-05-2024 20:53:31527 +03:00 Microsoft.AspNetCore.Cors.Infrastructure.CorsService ] CORS policy execution successful.
+[10-05-2024 20:53:31537 +03:00 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler ] "Bearer" was not authenticated. Failure message: "No SecurityTokenValidator available for token."
+[10-05-2024 20:53:31545 +03:00 Microsoft.AspNetCore.Authorization.DefaultAuthorizationService ] Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)"
+[10-05-2024 20:53:31553 +03:00 Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler ] AuthenticationScheme: "Bearer" was challenged.
+[10-05-2024 20:53:31554 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 DELETE https://localhost:7100/api/User/DeleteUser/2 - - - 401 0 - 28.4697ms
+[10-05-2024 20:54:17302 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request starting HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - -
+[10-05-2024 20:54:17314 +03:00 Microsoft.AspNetCore.Hosting.Diagnostics ] Request finished HTTP/2 GET https://localhost:7100/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.9538ms

@@ -30,7 +30,7 @@ namespace UsersStudentsAPIApp.Helpers
                     {
                         new OpenApiSecurityScheme
                         {
-                            Description = "Adds token to header",
+                            Description = "Add token to header",
                             Name = "Authorization",
                             Type = SecuritySchemeType.Http,
                             In = ParameterLocation.Header,

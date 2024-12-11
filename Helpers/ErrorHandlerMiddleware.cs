@@ -30,11 +30,11 @@ namespace UsersStudentsAPIApp.Helpers
                     InvalidRoleException or
                     UserAlreadyExistsException or
                     TeacherAlreadyExistsException or
-                    StudentAlreadyExistsException => (int) HttpStatusCode.BadRequest,
+                    StudentAlreadyExistsException => (int) HttpStatusCode.BadRequest,   // 400
 
-                    UnauthorizedAccessException => (int)HttpStatusCode.Unauthorized,
-                    ForbiddenException => (int) HttpStatusCode.Forbidden,
-                    UserNotFoundException => (int) HttpStatusCode.NotFound,
+                    UnauthorizedAccessException => (int)HttpStatusCode.Unauthorized,    // 401
+                    ForbiddenException => (int) HttpStatusCode.Forbidden,               // 403
+                    UserNotFoundException => (int) HttpStatusCode.NotFound,             // 404
                     _ => (int) HttpStatusCode.InternalServerError
                 };
 

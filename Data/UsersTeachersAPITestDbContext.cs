@@ -77,7 +77,7 @@ namespace UsersStudentsAPIApp.Data
                 entity.Property(e => e.Username)
                     .HasMaxLength(50).HasColumnName("USERNAME");
                 entity.Property(e => e.Password)
-                    .HasMaxLength(512).HasColumnName("PASSWORD");
+                    .HasMaxLength(60).HasColumnName("PASSWORD");
                 entity.Property(e => e.Email)
                     .HasMaxLength(50).HasColumnName("EMAIL");
                 entity.Property(e => e.Firstname)

@@ -38,64 +38,66 @@ namespace UsersStudentsAPIApp
             //builder.Services.AddAutoMapper(typeof(MapperConfig)); // Singleton
 
             // Per request scope
-            builder.Services.AddScoped(provider => 
+            builder.Services.AddScoped(provider =>
                 new MapperConfiguration(cfg =>
                 {
                     cfg.AddProfile(new MapperConfig());
                 })
             .CreateMapper());
 
-            ///Add Authentication
-            builder.Services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(options =>
-            {
-                options.IncludeErrorDetails = true;
-                options.SaveToken = true;
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = false,
-                    ValidateIssuer = false,
-                    ValidateAudience = false,
-                    RequireExpirationTime = false,
-                    ValidateLifetime = false,
-                    /// return new JsonWebToken(token); in .NET 8
-                    /// Override the default token signature validation an do NOT validtae the signature
-                    /// Just return the token
-                    SignatureValidator = (token, validator) => { return new JwtSecurityToken(token); }
-                };
-            });
 
+            ///Add Authentication
+            /*  builder.Services.AddAuthentication(options =>
+              {
+                  options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                  options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+              }).AddJwtBearer(options =>
+              {
+                  options.IncludeErrorDetails = true;
+                  options.SaveToken = true;
+                  options.TokenValidationParameters = new TokenValidationParameters
+                  {
+                      ValidateIssuerSigningKey = false,
+                      ValidateIssuer = false,
+                      ValidateAudience = false,
+                      RequireExpirationTime = false,
+                      ValidateLifetime = false,
+                      /// return new JsonWebToken(token); in .NET 8
+                      /// Override the default token signature validation an do NOT validtae the signature
+                      /// Just return the token
+                      SignatureValidator = (token, validator) => { return new JwtSecurityToken(token); }
+                  };
+              });
+  */
 
             // For production
 
-            /* builder.Services.AddAuthentication(options =>
-            {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(options =>
-            {
-                options.IncludeErrorDetails = true;
-                options.SaveToken = true;
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidIssuer = "https://codingfactory.aueb.gr",
+            builder.Services.AddAuthentication(options =>
+           {
+               options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+               options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+           }).AddJwtBearer(options =>
+           {
+               options.IncludeErrorDetails = true;
+               options.SaveToken = true;
+               options.TokenValidationParameters = new TokenValidationParameters
+               {
+                   ValidateIssuer = true,
+                   ValidIssuer = "https://codingfactory.aueb.gr",
 
-                    ValidateAudience = true,
-                    ValidAudience = "https://api/codingfactory.aueb.gr",
+                   ValidateAudience = true,
+                   ValidAudience = "https://api.codingfactory.aueb.gr",
 
-                    ValidateLifetime = true,
+                   ValidateLifetime = true, // ensure not expired
 
-                    ValidateIssuerSigningKey = true,
+                   ValidateIssuerSigningKey = true,
 
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8
-                        .GetBytes(builder.Configuration.GetConnectionString("SecretKey")!))
+                   IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8
+                       //.GetBytes(builder.Configuration.GetConnectionString("SecretKey")!))
+                       .GetBytes(builder.Configuration["Authentiation: SecretKey"]))
 
-                };
-            });*/
+               };
+           });
 
             /// System.Text.JSON
             /*builder.Services.AddControllers().AddJsonOptions(options =>
@@ -106,7 +108,7 @@ namespace UsersStudentsAPIApp
             });*/
 
             // If NewtonSoft would be used for json serialization / deserialization
-            // We have to add the NuGet dependencies an the following config
+            // We have to add the NuGet dependencies and the following config
 
             builder.Services.AddControllers()
                 .AddNewtonsoftJson(options =>

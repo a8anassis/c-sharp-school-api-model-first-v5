@@ -103,7 +103,7 @@ namespace UsersStudentsAPIApp.Controllers
         }
 
         [HttpPatch("{id}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Teacher")]
         public async Task<ActionResult<UserDTO>> UpdateUserPatch(int id, UserPatchDTO patchDTO)
         {
             var userId = AppUser!.Id;
